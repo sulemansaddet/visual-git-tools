@@ -1,7 +1,9 @@
-def checkout_total(price,qty):
-    return price*qty
+def checkout_total(price,qty,tax_rate):
 
-print ("Total:", checkout_total(15,5))
+    subtotal = price*qty
+    return subtotal + (subtotal*tax_rate)
+
+print ("Total:", checkout_total(15,5,0.065))
 
 
     
